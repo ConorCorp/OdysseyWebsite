@@ -1,0 +1,70 @@
+Home page (introduction to the Odyssey)
+  Need graphic, will use current home page and talk about content
+
+Essays and Background page (which will contain all writings we submit about the Odyssey, including a piece on its history, etc.)
+  (custom)
+  Single page without sidebar and all the essays on the page separated by titles
+  The Console
+
+Games (the bulk of the content of the site, with a page devoted to each game: 28 total)
+  (custom)
+  Single with sidebar of popular games and under it
+  links to all the other games
+
+  Each game (theme)
+  Single page, no side bar
+  Place for graphic and video and text
+
+OdysseyNow (pages devoted to our new implementation of the Odyssey: the OdysseyNow console)
+  Single page, no side bar
+  Place for graphic and text
+
+
+  Let's go with Escape Velocity as the theme.
+    For color scheme, we should work with the original odyssey colors:
+     brown and white, perhaps with another highlight added in.
+  Anything but that salmon color that is the default!  It would probably also be a good idea
+   to use the original Odyssey font somewhere as a title graphic (though not for headings, etc.).
+     That font is Checkbook.
+
+  For a main image of the Odyssey, because it is mostly white,
+   I think the best way to photograph it is against a black background.
+    I'll work on getting that done.  But the main image on the home page
+    should probably work with a black background for that section (the section that is
+     by default the gray, out of focus shot of the woman on a street or whatever).
+
+  I think you're right that the Console page doesn't need to be separate.
+    There will be plenty of info about the system/console on the home page,
+   and more in-depth info in the Essays and Background section.  So eliminate the
+  Console page and menu item.
+
+
+//TODO
+
+//HOME PAGE
+  1. Add Images
+    a. Header Background
+    b. Magnavox Odyssey Section
+    c. Odyssey Project Section - Maybe picture with Pittsburgh logo?
+    d. (3) highlighted articles section
+
+  2. Content - Self Explanatory
+
+  3. Update HyperLinks
+      a. Website Summary Section
+          Each of these points should each link to the other pages with 1 extra
+      b. Highlighted articles
+      c. Contact links at bottom
+
+//Games Home Page
+  1. Add Images
+    a. Header
+    b. Games section
+
+  2. Links
+    a. Add game links and excepts
+
+  3. Content
+    a. Add quick summary on top of games
+
+  4. Contact Us stuff
