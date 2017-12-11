@@ -1,45 +1,12 @@
-Home page (introduction to the Odyssey)
-  Need graphic, will use current home page and talk about content
-
-Essays and Background page (which will contain all writings we submit about the Odyssey, including a piece on its history, etc.)
-  (custom)
-  Single page without sidebar and all the essays on the page separated by titles
-  The Console
-
-Games (the bulk of the content of the site, with a page devoted to each game: 28 total)
-  (custom)
-  Single with sidebar of popular games and under it
-  links to all the other games
-
-  Each game (theme)
-  Single page, no side bar
-  Place for graphic and video and text
-
-OdysseyNow (pages devoted to our new implementation of the Odyssey: the OdysseyNow console)
-  Single page, no side bar
-  Place for graphic and text
-
-
-  Let's go with Escape Velocity as the theme.
-    For color scheme, we should work with the original odyssey colors:
-     brown and white, perhaps with another highlight added in.
-  Anything but that salmon color that is the default!  It would probably also be a good idea
-   to use the original Odyssey font somewhere as a title graphic (though not for headings, etc.).
-     That font is Checkbook.
-
-  For a main image of the Odyssey, because it is mostly white,
-   I think the best way to photograph it is against a black background.
-    I'll work on getting that done.  But the main image on the home page
-    should probably work with a black background for that section (the section that is
-     by default the gray, out of focus shot of the woman on a street or whatever).
-
-  I think you're right that the Console page doesn't need to be separate.
-    There will be plenty of info about the system/console on the home page,
-   and more in-depth info in the Essays and Background section.  So eliminate the
-  Console page and menu item.
-
-
 //TODO
+
+  GENERAL NOTES:
+    All changes done to styling should be done to sass (look it up, its dope) and then
+    compiled into css (its easy) - though there are a few places i used the style tags in html
+
+    For picture sizes, I recommend looking at he current dimensions of the sample picture
+    (like find out which pic is being referenced in the html and check it) and cropping your
+    picture to match
 
 //HOME PAGE
   1. Add Images
@@ -56,6 +23,10 @@ OdysseyNow (pages devoted to our new implementation of the Odyssey: the OdysseyN
       b. Highlighted articles
       c. Contact links at bottom
 
+  4. Decide if you want to keep highlighted articles
+      if you do, you can refernce individual essays by their id
+      so, href="Essays.html#Essay3"
+
 //Games Home Page
   1. Add Images
     a. Header
@@ -63,8 +34,63 @@ OdysseyNow (pages devoted to our new implementation of the Odyssey: the OdysseyN
 
   2. Links
     a. Add game links and excepts
+    game links are just the game example pages you make. ie
+    say you make ConorsGame.html from the GameExample.html template i made,
+    you just reference that. ie (href="./Games/ConorsGame.html")
 
   3. Content
     a. Add quick summary on top of games
 
   4. Contact Us stuff
+
+//Game Example page - USE THIS PAGE AS A TEMPLATE
+COPY THIS PAGE AND FILL FOR EACH NEW GAME
+  1. Add Images
+    a. Header
+    b. Game Header
+
+  2. Links
+    a. Add link to button which connects to downloadable game - recommend holding on exterior site
+
+  3. Content
+    a. Add Summary of game
+
+  4. Contact Us stuff
+
+//OdysseyNow
+  1. Add Images
+    a. Header
+    b. Odyssey Article Header
+
+  2. Content
+    a. Add summary of the project
+
+  3. Contact Us stuff
+
+//Essays
+  1. Add Images
+    a.header
+    b.image header for each essay
+
+  2. Contents of each essay
+    *NOTE*: if you add or delete essays, you will need to change to account
+    for this if the Table of contents. all you do to add an essay is:
+      1. Copy the code for one of the essay sections from the
+      <-- Essay# !--> tag until the next essay tag
+
+      2. in the <div class="wrapper style3" id="Essay4">
+          a. change the style to be either style2 or style3 (should be the
+          opposite of the last essay, ie if the last was style2, this is style3)
+          b. change the id to be Essay# or the title of the essay (rn they're set
+          to Essay# but you can change it to the title if thats easier to mangage)
+
+      4. Insert content into img tag and <p>s
+
+      3. in the <-- table of contents !-->
+          a. add or augment a new column with matching metadata from new essay ie
+            aa. put in your #Essay# in the id
+            ab. Change the name inbetween the tags to Essay#
+            example:
+            <li><a href="#Essay2">Essay2</a></li>
+
+  3. Contact Us Stuff
