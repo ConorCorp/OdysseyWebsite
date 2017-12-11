@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,900");
 @import url("font-awesome.min.css");
 @font-face {
-  font-family: "CheckBook";
-  src: url("fonts/CHECKBKO.TTF") format("ttf");
+  font-family: 'checkbookregular';
+  src: url("../fonts/checkbk0-webfont.woff2") format("woff2"), url("../fonts/checkbk0-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 /*
@@ -846,7 +846,8 @@ body.is-loading * {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  color: #484d55; }
+  color: #484d55;
+  font-family: 'checkbookregular', 'Source Sans Pros'; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit;
     text-decoration: none; }
@@ -1018,6 +1019,7 @@ input[type="submit"],
 input[type="reset"],
 button,
 .button {
+  font-family: 'checkbookregular', 'Source Sans Pro';
   -moz-transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
   -ms-transition: all .25s ease-in-out;
@@ -1129,7 +1131,7 @@ ol.default {
 
 /* Feature List */
 .feature-list h3 {
-  color: #5C4B43 !important; }
+  color: #5C4B43; }
   .feature-list h3:before {
     position: relative;
     display: inline-block;
@@ -1224,7 +1226,9 @@ ol.default {
   background: #282b34 url("images/overlay.png");
   color: #eee;
   color: rgba(255, 255, 255, 0.5); }
-  #footer-wrapper h1, #footer-wrapper h2, #footer-wrapper h3, #footer-wrapper h4, #footer-wrapper h5, #footer-wrapper h6, #footer-wrapper strong, #footer-wrapper b, #footer-wrapper a {
+  #footer-wrapper h1, #footer-wrapper h2, #footer-wrapper h4, #footer-wrapper h5, #footer-wrapper h6, #footer-wrapper strong, #footer-wrapper b, #footer-wrapper a {
+    color: #919499; }
+  #footer-wrapper h3 {
     color: #FCFBE3; }
   #footer-wrapper hr {
     border-top-color: #333;
@@ -1278,8 +1282,10 @@ ol.default {
   #footer-wrapper .feature-list section {
     border-top-color: #333;
     border-top-color: rgba(255, 255, 255, 0.05); }
-  #footer-wrapper .feature-list h3:before {
-    background: #3d4249 url("images/overlay.png"); }
+  #footer-wrapper .feature-list h3 {
+    font-color: #FCFBE3; }
+    #footer-wrapper .feature-list h3:before {
+      background: #3d4249 url("images/overlay.png"); }
 
 /* Logo */
 #logo h1 {
@@ -1399,6 +1405,7 @@ ol.default {
     padding-top: 0;
     border-top: 0; }
   .feature-list h3 {
+    font-color: #FCFBE3;
     margin: 0 0 0.75em 0;
     font-size: 1.15em;
     letter-spacing: 0.05em;
@@ -1448,6 +1455,7 @@ ol.default {
   .wrapper {
     padding: 6em 0 9em 0; }
     .wrapper .title {
+      font-family: 'checkbookregular', 'Source Sans Pros';
       font-size: 0.9em;
       width: 25em;
       height: 3.25em;
@@ -1786,6 +1794,7 @@ ol.default {
     border-top: 0;
     padding-top: 0; }
   .feature-list h3 {
+    font-color: #FCFBE3;
     position: relative;
     padding: 4px 0 0 48px;
     line-height: 1.25em; }
